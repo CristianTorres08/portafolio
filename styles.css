@@ -216,24 +216,21 @@ body {
   transform: scale(1.05);
 }
 
+/* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
-
   .nav {
-    padding: 0.5rem 1rem;
-    flex-wrap: wrap;
-    row-gap: 0.4rem;
+    padding: 0.8rem 1rem;
+    flex-direction: column; /* Apilado para mejor espacio */
+    gap: 0.8rem;
   }
 
   .nav-left {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Centrado en móviles */
   }
 
-  /* Ocultamos el status para que no infle el alto */
   .nav-status {
-    display: none;
+    display: none; /* Oculto para evitar amontonamiento */
   }
 
   .nav-links {
@@ -246,7 +243,11 @@ body {
   }
 
   .nav-links a {
-    font-size: 0.8rem;
+    font-size: 0.85rem; /* Ligeramente más pequeño para móviles */
+  }
+
+  .nav-btns {
+    margin-top: 0.5rem;
   }
 
   .botonOsc {
@@ -254,7 +255,6 @@ body {
     font-size: 0.75rem;
     margin-left: 0;
   }
-
 }
 
 /* ===== HERO SECTION ===== */
@@ -310,6 +310,7 @@ body {
   flex-wrap: wrap;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
+  max-width: 500px; 
 }
 
 .stack-item {
@@ -348,6 +349,11 @@ body {
 }
 
 /* ===== BOTONES HERO ===== */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
 .btn-primary, .btn-secondary {
   padding: 0.7rem 1.5rem;
   border-radius: 8px;
@@ -367,7 +373,7 @@ body {
 .btn-secondary {
   border: 1px solid var(--accent);
   color: var(--accent);
-  background: transparent
+  background: transparent;
 }
 
 .btn-primary:hover, .btn-secondary:hover {
@@ -381,41 +387,16 @@ body {
   border-radius: 20px;
   object-fit: cover;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-  transition: 0.5s ease;
-  transition: transform 0.5s ease, box-shadow 1px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
-.hero-image img:hover{
+
+.hero-image img:hover {
   transform: scale(1.08);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px var(--accent); 
-
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px var(--accent);
 }
 
+/* ===== RESPONSIVE HERO ===== */
 @media (max-width: 900px) {
-
-
-  .nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .nav-left {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .nav-btns {
-    margin-top: 0.5rem;
-  }
-
   #hero {
     padding: 3rem 1.5rem;
   }
@@ -429,6 +410,9 @@ body {
 
   .hero-text {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-description {
@@ -438,20 +422,20 @@ body {
 
   .hero-stack {
     justify-content: center;
+    max-width: 100%; /* En móvil quitamos el límite para que se centre bien */
   }
 
   .hero-buttons {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    width: 100%;
+    max-width: 300px;
   }
 
   .hero-image img {
     width: 220px;
   }
-
 }
+
 
 /* ===== SECCIÓN EXPERIENCIA (TIMELINE ZIG-ZAG RESPONSIVE) ===== */
 
