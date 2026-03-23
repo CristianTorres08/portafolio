@@ -995,6 +995,11 @@ body {
   box-shadow: 0 0 15px #0077b5;
   color: #0077b5;
 }
+.icon-email:hover {
+  border-color: #0077b5;
+  box-shadow: 0 0 15px #0077b5;
+  color: #0077b5;
+}
 
 .icon-gh:hover {
   border-color: var(--accent);
@@ -1020,6 +1025,7 @@ body {
   align-items: center;
   gap: 0.5rem;
 }
+
 
 /* Tablet */
 @media (max-width: 992px) {
