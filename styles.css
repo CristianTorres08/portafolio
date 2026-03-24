@@ -833,6 +833,8 @@ body {
   display: flex;
   align-items: center;
   gap: 1.2rem;
+  position: relative; 
+  z-index: 1;
 }
 
 #media .ctrl-btn {
@@ -939,7 +941,8 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  height: 120px; /* altura total del slider */
+  height: 120px;
+  z-index: 0;
 }
 
 #media #volume-bar {
@@ -982,7 +985,7 @@ body {
     align-items: center;
     text-align: center;
   }
-  
+
 }/* ============================================================
    FOOTER
    ============================================================ */
