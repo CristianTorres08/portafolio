@@ -897,6 +897,70 @@ body {
   margin-top: 10px;
 }
 
+#media .progress-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 80%; /* ajusta al ancho de la tarjeta */
+  margin: 1rem auto 0 auto; /* un poco abajo del player-controls */
+}
+
+#media #progress-bar {
+  -webkit-appearance: none;
+  height: 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  flex: 1;
+  cursor: pointer;
+}
+
+#media #progress-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 5px var(--accent);
+  cursor: pointer;
+}
+
+#media #current-time,
+#media #duration {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* VOLUME vertical al costado derecho */
+#media .volume-container {
+  position: absolute;
+  right: 0.2rem; /* distancia del borde de la tarjeta */
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg); /* vertical hacia arriba */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  height: 120px; /* altura total del slider */
+}
+
+#media #volume-bar {
+  -webkit-appearance: none;
+  width: 100px; /* largo del slider rotado */
+  height: 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+#media #volume-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 5px var(--accent);
+  cursor: pointer;
+}
+
 /* RESPONSIVE HUB */
 @media (max-width: 992px) {
   #media .dashboard-grid {
@@ -918,6 +982,7 @@ body {
     align-items: center;
     text-align: center;
   }
+  
 }/* ============================================================
    FOOTER
    ============================================================ */

@@ -329,7 +329,7 @@
     <!-- CUADRO 2: MÚSICA PREMIUM -->
     <div class="dash-item music-player-premium">
       <div class="music-bg-glow"></div> 
-      <span class="dash-tag">Playlist</span>
+      <span class="dash-tag">Mi Playlist para programar</span>
       
       <div class="player-display">
         <div class="disc-art" id="disc-icon">🎵</div>
@@ -343,6 +343,17 @@
         <button id="prev-btn-dash" class="ctrl-btn">prev</button>
         <button id="play-btn-dash" class="play-main">play</button>
         <button id="next-btn-dash" class="ctrl-btn">next</button>
+      </div>
+        
+      <div class="progress-container">
+        <span id="current-time">00:00</span>
+        <input type="range" id="progress-bar" value="0" min="0" max="100">
+        <span id="duration">00:00</span>
+      </div>
+
+      <div class="volume-container">
+        <label for="volume-bar">🔊</label>
+        <input type="range" id="volume-bar" min="0" max="1" step="0.01" value="0.8">
       </div>
       <audio id="audio-player" src=""></audio>
     </div>
