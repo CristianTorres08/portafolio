@@ -44,7 +44,7 @@ const canciones = [
     { titulo: "Casablanca", artista: "Jessica Jay", src: "./assets/music/Casablanca.mp3" },
     { titulo: "Passion", artista: "Netzwerk", src: "./assets/music/Passion.mp3" },
     { titulo: "P.I.M.P", artista: "50 CENT", src: "./assets/music/P.I.M.P.mp3" },
-    { titulo: "No se", artista: "El Clon", src: "./assets/music/No_se.mp3" }
+    { titulo: "No se", artista: "El Clon", src: "./assets/music/No_se.mp3" }                                        
 ];
 
 let indiceActual = 0;
