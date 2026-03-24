@@ -40,7 +40,7 @@ document.querySelectorAll('.step').forEach(step => observer.observe(step));
 // --- PLAYLIST LOGIC ---
 const canciones = [
     { titulo: "Get Lucky", artista: "Daft Punk", src: "./assets/music/Get_Lucky.mp3" },
-    { titulo: "Blinding Lights", artista: "The Weeknd", src: "./assets/music/blinding_lights.mp3" },
+    { titulo: "Blinding Lights", artista: "The Weeknd", src: "./assets/music/Blinding_lights.mp3" },
     { titulo: "Casablanca", artista: "Jessica Jay", src: "./assets/music/Casablanca.mp3" },
     { titulo: "Passion", artista: "Netzwerk", src: "./assets/music/Passion.mp3" },
     { titulo: "P.I.M.P", artista: "50 CENT", src: "./assets/music/P.I.M.P.mp3" },
