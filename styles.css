@@ -745,9 +745,13 @@ body {
    HUB DIGITAL
    ============================================================ */
 #media .main-section-title {
+  font-size: 2.5rem;
+  color: var(--text-main);
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3.5rem;
+  width: 100%;
 }
+
 
 #media .dashboard-grid {
   display: grid;
@@ -947,7 +951,7 @@ body {
 
 #media #volume-bar {
   -webkit-appearance: none;
-  width: 100px; /* largo del slider rotado */
+  width: 100px; 
   height: 6px;
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.2);
@@ -964,7 +968,6 @@ body {
   cursor: pointer;
 }
 
-/* RESPONSIVE HUB */
 @media (max-width: 992px) {
   #media .dashboard-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -1040,13 +1043,11 @@ body {
   padding-left: 5px;
 }
 
-/* SOCIAL */
-
 .social-icons {
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
-  flex-wrap: wrap; /* evita overflow */
+  flex-wrap: wrap;
 }
 
 .social-icons a {
@@ -1144,4 +1145,36 @@ body {
     padding: 0.4rem 0.8rem;
   }
 
+}
+
+/* ===== WHATSAPP FLOAT===== */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 58px;
+  height: 58px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  z-index: 1000;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* ICONO */
+.whatsapp-float img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* HOVER*/
+.whatsapp-float:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.3);
 }
